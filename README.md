@@ -27,7 +27,7 @@ This project demonstrates a **basic Evil Twin attack** using an **ESP32** microc
    - Adjust the baud rate according to your ESP32 model.
 3. Compile and flash the code into the ESP32.
    - Make sure the ESP32 libraries are installed.
-5. Connect to the fake (evil-twin) Wi-Fi network.
+5. Connect to the fake (evil twin) Wi-Fi network.
 6. Enter credentials on the fake login page.
 
 The submitted credentials will be printed in the Serial Monitor.

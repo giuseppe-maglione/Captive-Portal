@@ -36,7 +36,7 @@ The submitted credentials will be printed in the Serial Monitor.
 
 ## 🛡️ Disclaimer
 
-This project is intended solely for educational purposes in penetration testing, ethical hacking, and cybersecurity research. Use it only in:
+This project is intended solely for educational purposes in cybersecurity research. Use it only in:
 - Lab environments
 - Private networks you own
 - With explicit consent from all parties involved

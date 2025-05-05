@@ -32,6 +32,9 @@ This project demonstrates a **basic Evil Twin attack** using an **ESP32** microc
 
 The submitted credentials will be printed in the Serial Monitor.
 
+> **Note:** To change the default login interface, replace the content of
+> the `login_page` variable in `web_handler.cpp` with the contents of `google_login.html`.
+
 ---
 
 ## 🛡️ Disclaimer

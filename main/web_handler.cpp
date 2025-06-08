@@ -5,6 +5,7 @@
 #include <WebServer.h>
 
 void setup_web_handler() {
+    Serial.println("[INFO] Web page loaded");
     http_server.on("/", main_handler);
     http_server.on("/submit", submit_handler);
     http_server.on("/shutdown", shutdown_handler);
@@ -38,7 +39,9 @@ void submit_handler() {
 }
 
 void shutdown_handler() {
-    http_server.send(200, "text/plain", "Shutting down the Evil Twin...");
-    delay(1000); 
-    ESP.deepSleep(0); 
+    http_server.send(200, "text/plain", "Shutting down the Captive Portal...");
+    http_server.stop();
+    dns_server.stop();
+    WiFi.softAPdisconnect(true);
+    Serial.println("[CLOSED] Captive Portal stopped");
 }

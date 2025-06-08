@@ -1,5 +1,5 @@
 # About
-This project demonstrates a **basic Evil Twin attack** using an **ESP32** microcontroller. It creates a rogue Wi-Fi access point mimicking a legitimate one, with the intent of capturing user credentials through a fake login page.
+This project demonstrates a **basic Captive Portal attack** using an **ESP32** microcontroller. It creates a rogue Wi-Fi access point mimicking a legitimate one, with the intent of capturing user credentials through a fake login page.
 
 ---
 
@@ -27,13 +27,13 @@ This project demonstrates a **basic Evil Twin attack** using an **ESP32** microc
    - Adjust the baud rate according to your ESP32 model.
 3. Compile and flash the code into the ESP32.
    - Make sure the ESP32 libraries are installed.
-5. Connect to the fake (evil twin) Wi-Fi network.
+5. Connect to the fake Wi-Fi network.
 6. Enter credentials on the fake login page.
 
 The submitted credentials will be printed in the Serial Monitor.
 
 > **Note:** To change the default login interface, replace the content of
-> the `login_page` variable in `web_handler.cpp` with the contents of `google_login.html`.
+> the `login_page` variable in `html_data.cpp`.
 
 ---
 

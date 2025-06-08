@@ -13,14 +13,14 @@ WebServer http_server(80);
 
 void setup() {
 
-    Serial.begin(115200);   // start serial communication with PC (115200 baud)
+    Serial.begin(115200);  
   
     WiFi.softAP(ap_ssid, ap_password);    // create Access Point
     dns_server.start(DNS_PORT, "*", WiFi.softAPIP());   // start DNS server 
     setup_web_handler();    // setup http server
     http_server.begin();        // start http server
 
-    Serial.println("[OK] Evil Twin Started");
+    Serial.println("[OK] Captive Portal Started");
     Serial.println("[INFO] IP Address: ");
     Serial.print(WiFi.softAPIP()); 
 

